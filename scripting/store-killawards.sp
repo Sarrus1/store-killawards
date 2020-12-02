@@ -2,9 +2,11 @@
 
 #include <sourcemod>
 #include <store>
+#include <multicolors>
 
 #define MAX_FILTERS 128
 #define MAX_FILTER_KVLEN 255
+#define STORE_VERSION "v1.1"
 
 enum Filter
 {
@@ -31,7 +33,7 @@ public Plugin:myinfo =
 	author      = "eXemplar",
 	description = "Award kills component for [Store]",
 	version     = STORE_VERSION,
-	url         = "https://github.com/eggsampler/store-killawards"
+	url         = "https://github.com/Sarrus1/store-killawards"
 };
 
 /**
@@ -133,7 +135,7 @@ public Action:Event_PlayerDeath(Handle:event, const String:name[], bool:dontBroa
 			GiveCreditsToClient(client_killer, points);
 			if (g_enable_message_per_kill)
 			{
-				PrintToChat(client_killer, "%s%t", STORE_PREFIX, "Received Credits Suicide", points, g_currencyName);
+				PrintToChat(client_killer, "%t%t", "Store Prefix", "Received Credits Suicide", points, g_currencyName);
 			}
 		}
 		return Plugin_Continue;
@@ -147,7 +149,7 @@ public Action:Event_PlayerDeath(Handle:event, const String:name[], bool:dontBroa
 			GiveCreditsToClient(client_killer, points);
 			if (g_enable_message_per_kill)
 			{
-				PrintToChat(client_killer, "%s%t", STORE_PREFIX, "Received Credits TeamKill", points, g_currencyName, client_died);
+				PrintToChat(client_killer, "%t%t", "Store Prefix", "Received Credits TeamKill", points, g_currencyName, client_died);
 			}
 		}
 		return Plugin_Continue;
@@ -159,7 +161,7 @@ public Action:Event_PlayerDeath(Handle:event, const String:name[], bool:dontBroa
 		GiveCreditsToClient(client_killer, points);
 		if (g_enable_message_per_kill)
 		{
-			PrintToChat(client_killer, "%s%t", STORE_PREFIX, "Received Credits Kill", points, g_currencyName, client_died);
+			PrintToChat(client_killer, "%t%t", "Store Prefix", "Received Credits Kill", points, g_currencyName, client_died);
 		}
 	}
 
