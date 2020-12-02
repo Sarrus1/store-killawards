@@ -3,6 +3,7 @@ store-killawards
 
 ### Description
 Store module that awards players with credits when they kill another player.
+This version adds colors.
 
 ### Requirements
 
