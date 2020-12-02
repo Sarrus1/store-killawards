@@ -7,21 +7,21 @@
 	"Received Credits Suicide"
 	{
 		"#format"			"{1:d},{2:s}"
-		"en"				"{default} You have just received {pink}{1} {2}{default} for suiciding!"
-		"fr"				"{default} Vous avez reçu {pink}{1} {2}{default} pour vous être suicidé!"
+		"en"				"{default} You have just received {orchid}{1} {2}{default} for suiciding!"
+		"fr"				"{default} Vous avez reçu {orchid}{1} {2}{default} pour vous être suicidé!"
 	}
 
 	"Received Credits Kill"
 	{
 		"#format"			"{1:d},{2:s},{3:N}"
-		"en"				"{default} You have just received {pink}{1} {2}{default} for killing {purple}{3}{default}."
-		"fr"				"{default} Vous avez reçu {pink}{1} {2}{default} pour avoir tué {purple}{3}{default}.
+		"en"				"{default} You have just received {orchid}{1} {2}{default} for killing {purple}{3}{default}."
+		"fr"				"{default} Vous avez reçu {orchid}{1} {2}{default} pour avoir tué {purple}{3}{default}.
 	}
 
 	"Received Credits TeamKill"
 	{
 		"#format"			"{1:d},{2:s},{3:N}"
-		"en"				"{default} You have just received {pink}{1} {2}{default} for team killing {purple}{3}."
-		"fr"				"{default} Vous avez reçu {pink}{1} {2}{default} pour avoir tué {purple}{3}{default} qui est dans votre équipe."
+		"en"				"{default} You have just received {orchid}{1} {2}{default} for team killing {purple}{3}."
+		"fr"				"{default} Vous avez reçu {orchid}{1} {2}{default} pour avoir tué {purple}{3}{default} qui est dans votre équipe."
 	}
 }
