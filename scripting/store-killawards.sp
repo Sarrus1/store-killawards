@@ -2,7 +2,7 @@
 
 #include <sourcemod>
 #include <store>
-#include <multicolors>
+#include <colorvariables>
 
 #define MAX_FILTERS 128
 #define MAX_FILTER_KVLEN 255
