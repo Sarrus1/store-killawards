@@ -7,18 +7,18 @@
 	"Received Credits Suicide"
 	{
 		"#format"			"{1:d},{2:s}"
-		"en"				"{default}You have just received {1} {2} for suiciding!"
+		"en"				"{default} You have just received {pink}{1} {2} for suiciding!"
 	}
 
 	"Received Credits Kill"
 	{
 		"#format"			"{1:d},{2:s},{3:N}"
-		"en"				"{default}You have just received {1} {2} for killing {3}"
+		"en"				"{default} You have just received {pink}{1} {2} for killing {purple}{3}"
 	}
 
 	"Received Credits TeamKill"
 	{
 		"#format"			"{1:d},{2:s},{3:N}"
-		"en"				"{default}You have just received {1} {2} for team killing {3}"
+		"en"				"{default} You have just received {pink}{1} {2} for team killing {purple}{3}"
 	}
 }
